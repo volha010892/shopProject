@@ -1,12 +1,11 @@
 {
   "name": "shopproject",
   "version": "1.0.0",
-  "description": "",
   "main": "App.js",
   "scripts": {
     "builddev": "cross-env NODE_ENV=development .//node_modules//.bin//webpack-dev-server --progress --colors --history-api-fallback",
     "buildprod": "cross-env NODE_ENV=production .//node_modules//.bin//webpack --progress",
-    "browse": ".\\node_modules\\.bin\\lite-server",
+    "browse": "lite-server",
     "test": "jest"
   },
   "author": "",
@@ -50,5 +49,14 @@
     "redux-logger": "^3.0.6",
     "redux-thunk": "^2.3.0",
     "url-loader": "^4.1.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/volha010892/shopProject.git"
+  },
+  "bugs": {
+    "url": "https://github.com/volha010892/shopProject/issues"
+  },
+  "homepage": "https://github.com/volha010892/shopProject#readme",
+  "description": ""
 }
