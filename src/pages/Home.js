@@ -1,8 +1,8 @@
 import React from 'react';
 import { Items, Categories, Sort, MyLoader } from '../components';
 import { useDispatch, useSelector } from 'react-redux';
-import { itemsThunkAC } from '../../redux/fetchThunk';
-import { setSortBy, setCategory } from '../../AC/filtersAC';
+import { itemsThunkAC } from '../redux/fetchThunk';
+import { setSortBy, setCategory } from '../AC/filtersAC';
 import mobileMenu from '../img/mobileMenu.png';
 import orderBy from 'lodash/orderBy';
 import Button from '../components/Button';

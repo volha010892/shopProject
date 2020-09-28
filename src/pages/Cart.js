@@ -1,7 +1,7 @@
 import React from 'react';
 import CartItem from '../components/CartItem';
 import { useSelector, useDispatch } from 'react-redux';
-import { clearCart, deleteItemFromCart, deleteOneItem, addOneItem } from '../../AC/cartAC';
+import { clearCart, deleteItemFromCart, deleteOneItem, addOneItem } from '../AC/cartAC';
 import cartPng from '../img/cart.png';
 import { Link } from 'react-router-dom';
 
