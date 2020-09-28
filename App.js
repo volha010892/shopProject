@@ -8,6 +8,7 @@ import * as firebase from 'firebase';
 import { Provider } from 'react-redux';
 import { createStore, applyMiddleware } from 'redux';
 import thunk from 'redux-thunk';
+import history from './history';
 import combinedReducer from './redux/reducers.js';
 
 const firebaseCongig = {
@@ -23,10 +24,10 @@ const firebaseCongig = {
 firebase.initializeApp(firebaseCongig);
 const store = createStore(combinedReducer, applyMiddleware(thunk));
 ReactDOM.render(
-  <HashRouter>
     <Provider store={store}>
-      <MainPage />
-    </Provider>
-  </HashRouter>,
+      <Router history={history}>
+        <MainPage />
+      </Router>
+    </Provider>,
   document.getElementById('container'),
 );
