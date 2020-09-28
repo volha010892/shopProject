@@ -1,6 +1,6 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
-import * as firebase from '../redux/node_modules/firebase';
+import * as firebase from 'firebase';
 function Account() {
   const { register, errors, handleSubmit } = useForm({
     mode: 'onChange',

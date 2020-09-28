@@ -4,7 +4,7 @@ import { Link, Redirect } from 'react-router-dom';
 import logoCards from '../img/cards.png';
 import { useForm } from 'react-hook-form';
 import Button from '../components/Button';
-import * as firebase from '../redux/node_modules/firebase';
+import * as firebase from 'firebase';
 
 function Order() {
   const db = firebase.database();
