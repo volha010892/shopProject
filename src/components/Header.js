@@ -22,7 +22,7 @@ function Header() {
         <div className="container">
           <Link to="/">
             <div className="header__logo">
-              <img width="60" src={logoSvg} alt="logo" />
+            <img width="60" height="60" src={logoSvg} alt="logo" />
               <div>
                 <h1>Jewellery</h1>
                 <h3>самая стильная бижутерия</h3>
